@@ -13,7 +13,7 @@ function getPokemon(e) {
   let id = $pokeForm.find('input').val();
   $pokeForm.find('input').val(null);
 
-  $.get(`http://pokeapi.co/api/v2/pokemon/${id}`)
+  $.get(`//pokeapi.co/api/v2/pokemon/${id}`)
     .done(data => {
       let $card = $('#template').clone();
 
